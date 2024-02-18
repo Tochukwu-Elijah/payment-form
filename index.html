@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> payment form</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Secure Payment Form</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="card-number">Card Number:</label>
+			<input type="text" id="card-number" name="card-number" inputmode="numeric" pattern="[0-9]*" required>
+
+			<label for="expiration-date">Expiration Date:</label>
+			<input type="month" id="expiration-date" name="expiration-date" required>
+
+			<label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" inputmode="numeric" pattern="[0-9]*" required>
+
+			<input type="submit" value="Pay Now">
+		</form>
+	</div>
+</body>
+</html>
